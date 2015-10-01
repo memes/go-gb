@@ -1,6 +1,6 @@
 # Docker container to build a Go project with gb
 
-Simple container to build a [Go](golang.org) project using [gb](getgb.io) with source on the host. Uses volumes to mount a host directory as the project directory in container.
+Simple container to build a [Go](http://golang.org) project using [gb](http://getgb.io) with source on the host. Uses volumes to mount a host directory as the project directory in container.
 
 ## Build project in current working directory
 1. Make changes to Go code
@@ -27,4 +27,4 @@ E.g. `docker run -e GO_GB_FLAGS="-tags prod" ...` will execute `gb build -tags p
 ## Need SSH support for repos?
 Add the keys to /home/builder/.ssh and make any necessary changes to .gitconfig
 
-Clone the github repo [go-gb](github.com/memes/go-gb.git) to customise further.
+Clone the github repo [go-gb](https://github.com/memes/go-gb.git) to customise further.
